@@ -1,0 +1,11 @@
+Lastname
+FirstName
+contactNo
+Email-Id
+Passout Year(radio-14-18)
+Degree()
+Company/Institution Name
+Designation/Position
+Working History(If you have the)
+Loking for Job(yes/No)
+Upload Photo

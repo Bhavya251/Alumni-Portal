@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alumni Registration</title>
+    <link rel="icon" type="image/png" href="img/gperi_logo1.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/signupstyle.css" />
+    <script src="javascript/validate.js"></script>
+
+    
+
+</head>
+
+<body class="body">
+    <header class="mainheader">
+        <div class="headerblock">
+                <img src="img/gperi_logo1.png"/>
+                <h1> GPERI Alumni Portal</h1>
+        </div>
+    </header>
+
+    <header class="subheader"><h2>Registration Form</h2></header>
+    <div class="mainform">
+        <form action="signup.php" method="POST">
+            <span style="color: red; float: right">Note: ' * ' Represent Mandatory Fields</span>
+            <br/>
+            <b><span style="color: red">*</span>Name:</b>
+            <input type="text" name="firstname" placeholder=" Enter First Name" required/>
+            <b><span style="color: red">*</span>Last Name:</b>
+            <input type="text" name="lastname" placeholder="Enter Last Name" required />
+            <b><span style="color: red">*</span>Contact No.:</b>
+            <input type="number" name="contactno" placeholder="Enter Contact Number" required />
+            <b><span style="color: red">*</span>Email-ID:</b>
+            <input type="email" name="email-id" placeholder="Enter Email-id" required/>
+            <b><span style="color: red">*</span>Password:</b>
+            <input type="password" name="password" placeholder="Enter Password" required/>
+            <b><span style="color: red">*</span>Security Question-Favourite Movie:</b>
+            <input type="text" name="securityQue" placeholder="Enter Your Favourite Movie name" required />
+            <b><span style="color: red">*</span>Select Passout year:</b><br>
+            <input type="radio" name="year" value="2015" required/>2015<br/>
+            <input type="radio" name="year" value="2016"/>2016<br/>
+            <input type="radio" name="year" value="2017"/>2017<br/>
+            <input type="radio" name="year" value="2018"/>2018<br/>
+            <b><span style="color: red">*</span>Select Degree Course</b><br>
+            <select name="department" required>
+                <option  value="civilengineering">Civil Engineering</option>
+                <option value="computerengineering">Computer Engineering</option>
+                <option value="electricalengineering">Electrical Engineering</option>
+                <option value="mechanicalengineering">Mechanical Engineering</option>
+            </select>
+            <br/>
+            <b><span style="color: red">*</span>Company/Institution Name</b>
+            <input type="text" name="companyName" placeholder="Enter Company/Institution Name" required/>
+            <b><span style="color: red">*</span>Designation/Position</b>
+            <input type="text" name="designation" placeholder="Enter Designation/Position" required />
+            <b><span style="color: red">*</span>Looking For Job?</b><br>
+            <input type="radio" name="job" value="yes" required/>Yes<br/>
+            <input type="radio" name="job" value="no"/>No<br/><br/>
+
+            <button type="submit" name="submit" class="button">Submit</button>
+            <button type="reset" class="btnreset">Reset</button>
+        </form>
+    </div>
+
+    <footer class="mainfooter">
+            <p>Copyright &copy; <a href="#">alumni.gperi.ac.in</a></p>
+        </footer>
+</body>
+</html>
